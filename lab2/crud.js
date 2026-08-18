@@ -1,5 +1,23 @@
 import readline from "readline/promises";
+import { writeFile, readFile } from "fs/promises";
 import { stdin, stdout } from "process";
+
+const FILE = "products.json";
+
+const saveCart = async (cart) => {
+    await writeFile(FILE, JSON.stringify(cart, null, 2));
+};
+
+const getCart = async () => {
+    const data = await readFile(FILE, "utf-8");
+    return JSON.parse(data);
+};
+
+const addToCart = async (item) => {
+    const products = await getCart();
+    products.push(item);
+    await saveCart(products);
+};
 
 const main = async () => {
 
@@ -19,8 +37,6 @@ const main = async () => {
         console.log("5 - checkout");
 
         choice = await cin.question("Enter your choice: ");
-
-        console.log("Entered choice:", choice);
 
         switch (choice) {
 
@@ -42,7 +58,7 @@ const main = async () => {
 
             case "5":
                 console.log("Checkout");
-                process.exit()
+                process.exit();
                 break;
 
             default:
