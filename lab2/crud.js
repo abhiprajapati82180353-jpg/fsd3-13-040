@@ -62,7 +62,8 @@ const main = async () => {
             price:Number(price),
             qty:Number(qty),
         };
-        console.log(product);
+        // console.log(product);
+        await addToCart(product);
         break;
       case 2:
         showCart();
