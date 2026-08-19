@@ -4,5 +4,11 @@
     "name": "samsung ultra",
     "price": 96000,
     "qty": 1
+  },
+  {
+    "id": 102,
+    "name": "vivo t3x",
+    "price": 32000,
+    "qty": 1
   }
 ]
