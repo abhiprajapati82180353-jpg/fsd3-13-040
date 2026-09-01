@@ -1,0 +1,10 @@
+import http from "http";
+
+const server=http.createServer();
+server.on("request",(req,res)=>{
+    res.write("Hello Abhishek");
+    res.end();
+});
+server.listen(3000,()=>{
+    console.log("server is runnung on part 3000...");
+});
