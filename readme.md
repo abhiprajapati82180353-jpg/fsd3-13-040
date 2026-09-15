@@ -81,6 +81,17 @@ example..
     review:300
 }
 
+## headers is used to tell the client ,the type of data send by the server it may be 
+## html file,json data,plan text file,css file,any tokens(for login)
+   
+   ## Header
+   1.text/plan-->text file
+   2.text/html-->html contents/file
+   application/json-->json contents/file
+   text/css->styleshet
+   application/form-data-->for uploading file
+   application /auth-->for tokens
+   the header can be set 
 
 
 
