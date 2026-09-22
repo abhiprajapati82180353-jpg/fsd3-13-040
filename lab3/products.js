@@ -17,3 +17,13 @@ export const addProduct=()=>{
 
 
 };
+export const deleteProduct=(Pid)=>{
+    const item =products.findIndex((prd) => prd.id===pid);
+
+    if(item==-1)
+        return false;
+    products.splice(item,1)
+    console.log('products remaining:',products);
+    return true;
+};
+
