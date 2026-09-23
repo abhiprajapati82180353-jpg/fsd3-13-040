@@ -92,8 +92,15 @@ example..
    application/form-data-->for uploading file
    application /auth-->for tokens
    the header can be set 
+## get
+no parametre will pass to the server when we recive all item.
 
-
+## post(recoered add)
+add recored to we pass the value from body section in json formate of api tester(echo api). 
+## delete
+to delete any product we pass parameter that the id of the product from URL.
+## update(put or patch)
+to update any product wev pass id from url and data to udate from body.
 
 
 
