@@ -103,6 +103,13 @@ to delete any product we pass parameter that the id of the product from URL.
 to update any product wev pass id from url and data to udate from body.
 
 
+## express
 
+
+7.add folderName/node_modules in .gitignore
+8.  npm i express
+## send:-> send method ya fun. is used to reword back contaits to the cloent .
+## it may be html,json,html file,plan text
+## we can also add status code with status fun. it can be change with senf fun. .
 
 
