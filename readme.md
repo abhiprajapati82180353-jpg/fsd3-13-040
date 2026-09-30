@@ -113,3 +113,21 @@ to update any product wev pass id from url and data to udate from body.
 ## we can also add status code with status fun. it can be change with senf fun. .
 
 
+## map
+this function is used to itrate any array it must return new array
+
+``` 
+array.map((item)=>{
+    return
+})
+
+array.map((item)=>())
+```
+1.we have to used explicit return fun. whereas not requried in 2th stntax
+2.exclutine number of property from any json objects 
+const { p1,p2,...rest}=product;
+log(rest)
+
+## search
+1. to search any item in json array we use find method it will return null or unsaccessful or object on successful
+ array.find((item)=>item.id===id);
