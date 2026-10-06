@@ -131,3 +131,11 @@ log(rest)
 ## search
 1. to search any item in json array we use find method it will return null or unsaccessful or object on successful
  array.find((item)=>item.id===id);
+
+
+
+
+
+
+
+ 
